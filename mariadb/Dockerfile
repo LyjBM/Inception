@@ -14,3 +14,5 @@ RUN		tar xvf phpMyAdmin-5.0.4-all-languages.tar.gz --strip-components=1 -C /var/
 # nettoyage
 		&& rm -rf base.sql mysql_install.sh \
 		&& rm -rf phpMyAdmin-5.0.4-all-languages.tar.gz phpmyadmin.keyring
+
+EXPOSE	3306

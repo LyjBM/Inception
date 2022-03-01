@@ -11,3 +11,7 @@ RUN	mkdir -p /etc/nginx/certificate \
 		&& openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.localhost" -out /etc/nginx/certificate/lburnet_localhost-certificate.crt -keyout /etc/nginx/certificate/lburnet_localhost.key \
 # nettoyage
 		&& rm -rf nginx.conf
+
+EXPOSE	9000
+
+EXPOSE	443

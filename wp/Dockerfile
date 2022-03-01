@@ -18,3 +18,7 @@ RUN	mkdir -p /var/www/html/phpmyadmin /var/www/html/wordpress \
 		&& chown -R www-data:www-data /var/www/html \
 # nettoyage
 		&& rm -rf config.inc.php wp-config.php wordpress-5.6.1.tar.gz
+
+EXPOSE	3306
+
+EXPOSE	9000
